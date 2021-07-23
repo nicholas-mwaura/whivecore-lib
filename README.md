@@ -1,8 +1,8 @@
 # Dashcore Library
 
-[![NPM Version](https://img.shields.io/npm/v/@dashevo/dashcore-lib)](https://www.npmjs.com/package/@dashevo/dashcore-lib)
-[![Build Status](https://github.com/dashevo/dashcore-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/dashcore-lib/actions/workflows/test_and_release.yml)
-[![Release Date](https://img.shields.io/github/release-date/dashevo/dashcore-lib)](https://github.com/dashevo/dashcore-lib/releases/latest)
+[![NPM Version](https://img.shields.io/npm/v/@nicholas-mwaura/whivecore-lib)](https://www.npmjs.com/package/@nicholas-mwaura/whivecore-lib)
+[![Build Status](https://github.com/nicholas-mwaura/whivecore-lib/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/nicholas-mwaura/whivecore-lib/actions/workflows/test_and_release.yml)
+[![Release Date](https://img.shields.io/github/release-date/nicholas-mwaura/whivecore-lib)](https://github.com/nicholas-mwaura/whivecore-lib/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
 A pure and powerful JavaScript Dash library.
@@ -22,7 +22,7 @@ Dash is a powerful new peer-to-peer platform for the next generation of financia
 ### NodeJS
 
 ```
-npm install @dashevo/dashcore-lib
+npm install @nicholas-mwaura/whivecore-lib
 ```
 
 ### Browser
@@ -30,9 +30,9 @@ npm install @dashevo/dashcore-lib
 #### CDN Standalone
 
 ```html
-<script src="https://unpkg.com/@dashevo/dashcore-lib"></script>
+<script src="https://unpkg.com/@nicholas-mwaura/whivecore-lib"></script>
 <script>
-  const { PrivateKey } = dashcore;
+  const { PrivateKey } = whivecore;
   const privateKey = new PrivateKey();
   const address = privateKey.toAddress().toString();
   ...
@@ -41,22 +41,22 @@ npm install @dashevo/dashcore-lib
 
 #### Building the Browser Bundle
 
-To build a dashcore-lib full bundle for the browser:
+To build a whivecore-lib full bundle for the browser:
 
 ```sh
 npm run build
 ```
 
-This will generate a file named `dashcore-lib.min.js` in the `dist/` folder.
+This will generate a file named `whivecore-lib.min.js` in the `dist/` folder.
 
 ## Usage
 
 ### Browser
 
 ```
-<script src='./dist/dashcore-lib.min.js' type="text/javascript"></script>
+<script src='./dist/whivecore-lib.min.js' type="text/javascript"></script>
 <script>
-  const PrivateKey = dashcore.PrivateKey;
+  const PrivateKey = whivecore.PrivateKey;
   const privateKey = new PrivateKey();
   const address = privateKey.toAddress().toString();
 </script>
@@ -66,18 +66,18 @@ This will generate a file named `dashcore-lib.min.js` in the `dist/` folder.
 
 Some functionality is implemented as a module that can be installed separately:
 
-- [Payment Protocol Support](https://github.com/dashevo/dashcore-payment-protocol)
-- [Peer to Peer Networking](https://github.com/dashevo/dashcore-p2p)
-- [Dash Core JSON-RPC](https://github.com/dashevo/dashd-rpc)
-- [Mnemonics](https://github.com/dashevo/dashcore-mnemonic)
-- [Elliptical Curve Integrated Encryption Scheme](https://github.com/dashevo/bitcore-ecies-dash)
-- [Signed Messages](https://github.com/dashevo/bitcore-message-dash)
+- [Payment Protocol Support](https://github.com/nicholas-mwaura/whivecore-payment-protocol)
+- [Peer to Peer Networking](https://github.com/nicholas-mwaura/whivecore-p2p)
+- [Dash Core JSON-RPC](https://github.com/nicholas-mwaura/whived-rpc)
+- [Mnemonics](https://github.com/nicholas-mwaura/whivecore-mnemonic)
+- [Elliptical Curve Integrated Encryption Scheme](https://github.com/nicholas-mwaura/bitcore-ecies-whive)
+- [Signed Messages](https://github.com/nicholas-mwaura/bitcore-message-whive)
 
 ### Development & Tests
 
 ```sh
-git clone https://github.com/dashevo/dashcore-lib
-cd dashcore-lib
+git clone https://github.com/nicholas-mwaura/whivecore-lib
+cd whivecore-lib
 npm install
 ```
 
@@ -143,7 +143,7 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/dashevo/dashcore-lib/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/nicholas-mwaura/whivecore-lib/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
